@@ -90,10 +90,11 @@ void MyDeque<T>::clear(){
 
 template <typename T>
 void MyDeque<T>::display() {
+    if(empty()) cout<<"MyDeque jest puste"<<endl;
     for (int i = head; i != tail; i=(i+1) % msize) {
         std::cout << tab[i] << " ";
     }
-    std::cout << std::endl;
+    cout<<endl;
 }
 
 template <typename T>
